@@ -33,11 +33,32 @@ form div.active {
     background-color: rgb(248, 250, 146);
 }
 
+#red{
+    background: rgb(255,0,0);
+}
+
+#green{
+    background: rgb(0, 255, 0);
+}
+
+#blue{
+    background: rgb(0, 0, 255);
+}
+
+#yellow{
+    background: rgb(255, 255, 0);
+}
+
 #grid {
     display: flex;
     flex-direction: column;
     width: auto;
     height: auto;
+}
+
+#settings{
+    display:flex;
+    justify-content: space-between;
 }
 
 .container{
@@ -50,18 +71,31 @@ form div.active {
     align-items: center;
 }
 
+.colorList{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .row{
     display:flex;
     flex-direction: row;
 }
 
 .square{
-  background: rgb(190, 189, 189);
-  width: 30px;
-  height: 30px;
-  border-width: 1px;
-  border-style: solid;
-  border-color: gray;
+    background: rgb(190, 189, 189);
+    width: 30px;
+    height: 30px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: gray;
+}
+
+.color{
+    width: 30px;
+    height: 30px;
+    border-width: 1px;
+    border-style: solid;
 }
 
 .square:hover{

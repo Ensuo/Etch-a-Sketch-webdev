@@ -1,7 +1,21 @@
 var grid = document.getElementById("grid");
-var squares = document.querySelectorAll("square");
 var grid_size = 16;
 var btn_resize = document.getElementById("btn-resize");
+
+function updateSquareColor(square){
+    if(square.classList.contains('active')){
+        square.classList.remove('active');
+    }else{
+        square.classList.add('active');
+    }
+}
+
+/*function updateColor(color){
+    switch(color.className){
+        case 'red':
+            document.querySelector
+    }
+}*/
 
 function createGrid(size){
     for(var i = 0; i < size; i++){
@@ -19,7 +33,7 @@ function createGrid(size){
     }
 
     document.querySelectorAll(".square").forEach(square => {
-        square.addEventListener("click", () =>  updateColor(square));
+        square.addEventListener("click", () =>  updateSquareColor(square));
     });
 }
 
@@ -33,15 +47,11 @@ function updateGrid(){
     }
 }
 
-function updateColor(square){
-    if(square.classList.contains('active')){
-        square.classList.remove('active');
-    }else{
-        square.classList.add('active');
-    }
-}
-
 btn_resize.addEventListener('click', updateGrid);
+
+/*document.querySelectorAll("colorList").forEach(color => {
+    color.addEventListener("click", () => updateColor(color));
+});*/
 
 if(grid_size > 0){
     createGrid(grid_size);
