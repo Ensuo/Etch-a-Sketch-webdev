@@ -1,4 +1,5 @@
 var grid = document.getElementById("grid");
+var squares = document.querySelectorAll("square");
 var grid_size = 16;
 var btn_resize = document.getElementById("btn-resize");
 
@@ -16,6 +17,10 @@ function createGrid(size){
         }
         grid.appendChild(row);
     }
+
+    document.querySelectorAll(".square").forEach(square => {
+        square.addEventListener("click", () =>  updateColor(square));
+    });
 }
 
 function updateGrid(){
@@ -25,6 +30,14 @@ function updateGrid(){
         createGrid(grid_size);
     }else{
         alert("Coloca um valor c3rt0 se nnnnnn vai 3er bUSAgs.");
+    }
+}
+
+function updateColor(square){
+    if(square.classList.contains('active')){
+        square.classList.remove('active');
+    }else{
+        square.classList.add('active');
     }
 }
 

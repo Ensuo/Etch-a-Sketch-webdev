@@ -67,3 +67,11 @@ form div.active {
 .square:hover{
     background: rgb(151, 151, 151)
 }
+
+.active{
+    background: rgb(255,0 ,0);
+}
+
+.square.active:hover{
+    background: rgb(255, 50, 0)
+}
