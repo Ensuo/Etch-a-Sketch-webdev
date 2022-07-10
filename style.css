@@ -1,3 +1,11 @@
+h1{
+    color: rgb(255, 213, 213);
+    font-size:40px;
+    margin: 0px;
+
+    text-align: center;
+}
+
 body{
     background-color: rgb(29, 25, 25);
 }
@@ -20,33 +28,46 @@ form div.active {
     left:0;
 }
 
+button{
+    font-size: 20px;
+    height: 60px;
+    width:100px;
+    padding: 0px;
+    cursor:pointer;
+}
+
+#settings{
+    width: 100%;
+
+}
+
+#blackmode{
+    border:1px outset rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+}
+
+#rainbowmode{
+    border:1px outset rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+}
+
+#erasermode{
+    border:1px outset rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+}
+
+#btn-reset{
+    border:1px outset rgb(125, 125, 240);
+    background-color: rgb(115, 115, 200);
+}
+
 #btn-resize{
     border:1px outset rgb(252, 255, 72);
     background-color: rgb(212, 214, 76);
-    font-size: 20px;
-    height: 40px;
-    width:70px;
-    cursor:pointer;
 }
 
 #btn-resize:hover{
     background-color: rgb(248, 250, 146);
-}
-
-#red{
-    background: rgb(255,0,0);
-}
-
-#green{
-    background: rgb(0, 255, 0);
-}
-
-#blue{
-    background: rgb(0, 0, 255);
-}
-
-#yellow{
-    background: rgb(255, 255, 0);
 }
 
 #grid {
@@ -66,12 +87,6 @@ form div.active {
     width: 100vw;
     padding: 0;
 
-    display:flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.colorList{
     display:flex;
     justify-content: center;
     align-items: center;
@@ -102,10 +117,4 @@ form div.active {
     background: rgb(151, 151, 151)
 }
 
-.active{
-    background: rgb(255,0 ,0);
-}
-
-.square.active:hover{
-    background: rgb(255, 50, 0)
-}
+.active{}
